@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Beacon scan
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-button (click)="Scan()" expand="block">Start scan</ion-button>
+  </div>
+
+  <ion-list>
+    <ion-item *ngFor="let device of devices">
+   
+      <p>{{device.name || "Unnamed"}}</p>
+       <p>id is: {{device.id}}</p>
+   <p>Distance: {{device.rssi}}</p>
+   
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "ngCordovaKonK",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
